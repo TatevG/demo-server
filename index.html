@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <form id="userForm">
+        <fieldset>
+            <label>name:
+                <input type="text" id="name" name="person.name" />
+            </label>
+            <label>surname:
+                <input type="text" id="surname" name="person.surname" />
+            </label>
+            <label>email:
+                <input type="text" id="email" name="person.email" />
+            </label>
+        </fieldset>
+    </form>
+    <form id="changeForm">
+        <fieldset>
+            <label>name:
+                <input type="text" id="changeName" name="person.name" />
+            </label>
+            <label>surname:
+                <input type="text" id="changeSurname" name="person.surname" />
+            </label>
+            <label>email:
+                <input type="text" id="changeEmail" name="person.email" />
+            </label>
+            <label>ID:
+                <input type="text" id="changeId" name="person.id" />
+            </label>
+        </fieldset>
+    </form>
+    <form id="deleteForm">
+        <fieldset>
+            <label>ID:
+                <input type="text" id="delId" name="person.id" />
+            </label>
+        </fieldset>
+    </form>
+    <button id="addData" onclick="addData()">Add</button>
+    <button id="changeData" onclick="changeData()">Change</button>
+    <button id="deleteData" onclick="deleteData()">Delete</button>
+    <button id="showData" onclick="showData()">Show DB</button>
+    
+    <p id="list"></p>
+    <script src="./showDB.js"></script>
+</body>
+</html>
